@@ -1,0 +1,31 @@
+.exemplo_flexbox {
+    height: 250px;
+    border: 1px solid orangered;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: nowrap; */
+    /* flex-flow: row nowrap; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.exemplo_flexbox div {
+    background: rgb(0, 127, 255);
+    /* width: 60px; */
+    flex-basis: 100px;
+    height: 60px;
+    margin: 15px;
+}
+
+.exemplo_flexbox div:nth-child(2) {
+    background: red;
+    flex-shrink: 2;
+    order: 1;
+}
+
+.exemplo_flexbox div:nth-child(4) {
+    background: orange;
+    flex-shrink: 2;
+    order: 1;
+    align-self: flex-end;
+}

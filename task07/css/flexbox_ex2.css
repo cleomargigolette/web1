@@ -1,0 +1,20 @@
+.textos {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 30%;
+    padding: 10px;
+    margin: 1%;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.card button {
+    align-self: flex-end;
+}

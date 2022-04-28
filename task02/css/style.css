@@ -1,0 +1,71 @@
+.poodle {
+    font-family: 'Courier New', Courier, monospace;
+    color: palevioletred;
+    font-size: 1.5em;
+}
+
+img.poodle {
+    border: 1px solid palevioletred;
+}
+
+.pinscher {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    font-size: 1.4em;
+}
+
+img.pinscher {
+    border: 1px solid black;
+}
+
+.labrador {
+    font-family: 'Droid Sans', sans-serif;
+    color: green;
+    font-size: 1.3em;
+}
+
+img.labrador {
+    border: 1px solid green;
+}
+
+.dobermann {
+    font-family: 'Quicksand', sans-serif;
+    color: blue;
+    font-size: 1.2em;
+}
+
+img.dobermann {
+    border: 1px solid blue;
+}
+
+.boxer {
+    font-family: 'Permanent Marker', cursive;
+    color: brown;
+    font-size: 1.1em;
+}
+
+img.boxer {
+    border: 1px solid brown;
+}
+
+.head {
+    font-size: 1.4em;
+}
+
+table {
+    border: 1px solid blue;
+}
+
+td, th {
+    border: 1px solid;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+img {
+    cursor: pointer;
+}

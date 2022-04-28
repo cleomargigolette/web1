@@ -1,0 +1,31 @@
+p {
+    width: 200px;
+    border: 2px dotted;
+    margin-left: 20px;
+}
+
+div {
+    border: 1px solid;
+    width: 350px;
+    margin-top: 20px;
+}
+
+#um {
+    background-color: #d3e4cd;
+}
+
+#dois {
+    background-color: #ebe4de;
+}
+
+#tres {
+    background-color: rgb(217, 218, 235);
+}
+
+#quatro {
+    background-color: #e7d8e7;
+}
+
+#cinco {
+    background-color: #f1d481;
+}

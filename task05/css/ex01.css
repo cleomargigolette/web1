@@ -1,0 +1,99 @@
+div {
+    border: 1px solid black;
+}
+
+#container {
+    margin: auto;
+    width: 1300px;
+    background-color: #ec0202;
+    padding: 4px;
+}
+
+#haeder {
+    height: 90px;
+    background-color: #eccc11;
+}
+
+#haeder div {
+    margin: 9px 9px 8px 8px;
+}
+
+#logo {
+    height: 80%;
+    width: 15%;
+    float: left;
+    background-color: #8f7e20;
+}
+
+#banner {
+    height: 80%;
+    width: 55%;
+    float: right;
+    background-color: #8f7e20;
+}
+
+#identity {
+    height: 80%;
+    width: 25%;
+    float: left;
+    background-color: #ccbe6c;
+}
+
+#content {
+    height: 800px;
+    background-color: #1edf28;
+}
+
+#content div {
+    margin: 3px;
+}
+
+#submenu {
+    height: 35px;
+    background-color: #f5fcfa;
+}
+
+#content-left {
+    width: 24%;
+    float: left;
+    background-color: #181d18;
+}
+
+#content-left div {
+    background-color: #ec0c8f;
+    margin: 6px;
+}
+
+#content-right {
+    height: 100%;
+    width: 24%;
+    float: left;
+    background-color: #e4eee5;
+}
+
+#content-center {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #2e3a2f;
+}
+
+#post{
+    height: 94px;
+    width: 99%;
+    background-color: #c1fdc4;
+}
+
+#post-img{
+    height: 84px;
+    width: 20%;
+    float: left;
+    background-color: #21a4cc;
+}
+
+#post-content{
+    height: 84px;
+    width: 77%;
+    float: right;
+    background-color: #1f505f;
+}

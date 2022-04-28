@@ -1,0 +1,35 @@
+#container {
+
+    margin-top: 20px;
+}
+
+div {
+    border: 1px solid rgb(11, 11, 19);
+}
+
+#um {
+    color: #36771e;
+    float: left;
+}
+
+#dois {
+    color: #804d21;
+    float: left;
+}
+
+#tres {
+    color: rgb(59, 64, 163);
+    float: left;
+}
+
+#quatro {
+    color: #8d308d;
+}
+
+#cinco {
+    color: #947521;
+}
+
+#seis {
+    color: #754a3c;
+}

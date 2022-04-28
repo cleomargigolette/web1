@@ -1,0 +1,109 @@
+div {
+    border: 1px solid black;
+}
+
+#container {
+    margin: auto;
+    width: 1300px;
+    background-color: #ec0202;
+    padding: 24px;
+}
+
+#haeder {
+    height: 90px;
+    background-color: #eccc11;
+}
+
+#content{
+    width: 100%;
+}
+
+#content{
+    height: 705px;
+    background-color: #1edf28;
+}
+
+#content div {
+    margin: 3px;
+}
+#content-left {
+    width: 70%;
+    height: 690px;
+    float: left;
+    background-color: #181d18;
+}
+
+.content-left-intern  {
+    height: 335px;
+    background-color: #ec0c8f;
+    margin: 6px;
+}
+#left{
+    float: left;
+    height: 95%;
+    width: 45%;
+    background-color: #cee0d1;
+}
+
+#right{
+    float: right;
+    height: 95%;
+    width: 45%;
+    background-color: #303631;
+}
+
+#content-right {
+    width: 28%;
+    height: 690px;
+    float: right;
+    background-color: #e4eee5;
+}
+
+#div1{
+    margin-top: 10px;
+    height: 40px;
+    width: 98%;
+    background-color: #5d945d;
+}
+
+#div2{
+    margin-top: 10px;
+    height: 280px;
+    width: 98%;
+    background-color: #465f46;
+}
+
+#div3{
+    margin-top: 10px;
+    height: 350px;
+    width: 98%;
+    background-color: #3e3f3e;
+}
+
+.div3-interno{
+    margin-top: 10px;
+    height: 168px;
+    width: 98%;
+    background-color: #7fee7f;
+}
+
+.div3-interno-left{
+    float: left;
+    height: 95%;
+    width: 45%;
+    background-color: #1d291d
+}
+
+.div3-interno-right{
+    float: right;
+    height: 95%;
+    width: 45%;
+    background-color: #345f34;
+}
+
+#footer{
+    height: 50px;
+    width: 100%;
+    margin-top: 2pz;
+    background-color: #3cdfb3;
+}
