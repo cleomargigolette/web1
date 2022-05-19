@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Task 09 - Bootstrap</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projetos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Quem Sou</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="jumbo">
+        <div class="container">
+            <h1 class="display-4">Travel with me!!</h1>
+            <p class="lead">Viaje, a vida é feita de experiências</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="cards-container">
+            <div class="row">
+                <!--
+                    (.col-12.col-sm-4>.card>img.card-img-top+.card-body>p.card-text)*3
+                -->
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <img src="imagens/img1.jpeg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Planejamento</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <img src="imagens/img2.jpeg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Preparação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card">
+                        <img src="imagens/img3.jpeg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text">Realização</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards-container">
+            <article>
+                <h2>Título do artigo</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>
+            Desenvolvido por Cleomar Gigolette da Silva em 18.05.2022
+        </p>
+    </footer>
+</body>
+
+</html>
