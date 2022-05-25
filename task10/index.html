@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+    <title>Task 10</title>
+</head>
+
+<body>
+
+    <h1>Formulário de Novos Membros</h1>
+
+    <form method="get" action="recebe.php">
+        <fieldset>
+            <h2>Dados pessoais</h2>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text">
+            <label for="idade">Idade</label>
+            <input id="idade" type="number">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel">
+            <label for="aniversario">Data de Nascimento</label>
+            <input id="aniversario" type="date">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password">
+        </fieldset>
+        <fieldset>
+            <label for="sexo">Sexo</label>
+            <input name="sexo" type="radio"> Masculino <br>
+            <input name="sexo" type="radio"> Feminino <br>
+            <input name="sexo" type="radio"> Outro <br>
+        </fieldset>
+        <fieldset>
+            <H2>Qual suas principais linguagens de programação?</H2>
+            <div class="checkbox">
+                <label for="java">Java</label>
+                <input id="java" type="checkbox">
+            </div>
+            <div class="checkbox">
+                <label for="go">Go</label>
+                <input id="go" type="checkbox">
+            </div>
+            <div class="checkbox">
+                <label for="text-area">Python</label>
+                <input type="checkbox">
+            </div>
+            <div class="checkbox">
+                <label for="c#">C#</label>
+                <input id="c#" type="checkbox">
+            </div>
+            <div class="checkbox">
+                <label for="javascript">Javascript</label>
+                <input id="javascript" type="checkbox">
+            </div>
+        </fieldset>
+        <fieldset class="section-one">
+            <label for="text-area">Conte um pouco sobre você</label>
+            <textarea class="text-area" id="text-area" rows="10" cols="30"></textarea>
+            <label for="select-one">Como você se define no momento em relação ao sua experiência com
+                programação?</label>
+            <select id="select-one" name="nivel">
+                <option value="estagiario">Estagiário</option>
+                <option value="junior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Sênior</option>
+                <option value="especialista">Especialista</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="range-0-100">De 0 até 100, quanto você sabe de programação?</label>
+            <input id="range-0-100" type="range" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="0" label="0%">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50" label="50%">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100" label="100%">
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <label for="arquivo">Escolha um arquivo para enviar</label>
+            <input id="arquivo" type="file">
+        </fieldset>
+        <fieldset>
+            <input class="button-formulario submit" type="submit">
+            <input class="button-formulario reset" type="reset">
+        </fieldset>
+        <fieldset>
+            <input class="button-formulario adicionar" type="button" value="Adicionar aos favoritos">
+            <input type="image" id="image" alt="logo" src="imagens/img1.jpeg">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
