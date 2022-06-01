@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <script>
+
+        function total(novoTotal) {
+            document.getElementById("total").innerHTML = novoTotal;
+        }
+
+        function calcular(id, operacao) {
+
+            var quantidade = document.getElementById(`produtoQuantidade${id}`).innerHTML;
+            var oldTotal = document.getElementById("total").innerHTML;
+            var produtoValor = document.getElementById(`produtoValor${id}`).innerHTML;
+            
+            if (operacao === '+') {
+                document.getElementById(`produtoQuantidade${id}`).innerHTML = parseInt(quantidade) + parseInt(1);
+                total(parseInt(oldTotal) + parseInt(produtoValor));
+            } else {
+                if (quantidade >= 1) {
+                    document.getElementById(`produtoQuantidade${id}`).innerHTML = parseInt(quantidade) - parseInt(1);
+                    total(parseInt(oldTotal) - parseInt(produtoValor));
+                } else {
+                    alert("Não é possível subtrair, a quantidade mínima é 0");
+                }
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Cardápio</h1>
+    
+    <table>
+        <tr>
+            <td>Produto</td>
+            <td>Descrição</td>
+            <td>Preço</td>
+            <td>Quantidade</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Curso de introdução de HTML</td>
+            <td>Nesse curso você irá aprender conceitos básicos de hmtl</td>
+            <td id="produtoValor1">99</td>
+            <td id="produtoQuantidade1">0</td>
+            <td><input type="button" value="+" onclick="calcular(1, '+')"></td>
+            <td><input type="button" value="-" onclick="calcular(1, '-')"></td>
+        </tr>
+
+        <tr>
+            <td>Curso de introdução de CSS</td>
+            <td>Nesse curso você irá aprender conceitos básicos de css</td>
+            <td id="produtoValor2">29</td>
+            <td id="produtoQuantidade2">0</td>
+            <td><input type="button" value="+" onclick="calcular(2, '+')"></td>
+            <td><input type="button" value="-" onclick="calcular(2, '-')"></td>
+        </tr>
+
+        <tr>
+            <td>Curso de introdução de Javascript</td>
+            <td>Nesse curso você irá aprender conceitos básicos de Javascript</td>
+            <td id="produtoValor3">19</td>
+            <td id="produtoQuantidade3">0</td>
+            <td><input type="button" value="+" onclick="calcular(3, '+')"></td>
+            <td><input type="button" value="-" onclick="calcular(3, '-')"></td>
+        </tr>
+
+        <tr>
+            <td>Curso de introdução de UI e UX</td>
+            <td>Nesse curso você irá aprender conceitos básicos de UI e UX</td>
+            <td id="produtoValor4">24</td>
+            <td id="produtoQuantidade4">0</td>
+            <td><input type="button" value="+" onclick="calcular(4, '+')"></td>
+            <td><input type="button" value="-" onclick="calcular(4, '-')"></td>
+        </tr>
+
+        <tr>
+            <td>Curso de introdução ao VS Code</td>
+            <td>Nesse curso você irá aprender conceitos básicos desta IDE</td>
+            <td id="produtoValor5">21</td>
+            <td id="produtoQuantidade5">0</td>
+            <td><input type="button" value="+" onclick="calcular(5, '+')"></td>
+            <td><input type="button" value="-" onclick="calcular(5, '-')"></td>
+        </tr>
+
+    </table>
+    <p>Total: <span id="total">0</span></p>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <script>
+        function calcularNota() {
+
+            var totalPerguntas = 5;
+            var certas = 0;
+
+            for (let index = 1; index <= totalPerguntas; index++) {
+
+                var resposta = document.getElementById(`p${index}Correta`).checked;
+
+                if (resposta == true) {
+                    certas++;
+                }
+            }
+
+            document.getElementById("nota").innerHTML = (certas * 20);
+
+            alert(`Sua nota foi ${certas * 20}`);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        Questionário sobre Web
+    </h1>
+
+    <h2>
+        1. Qual comando HTML quebra uma linha?
+    </h2>
+    <p><input type="radio" name="pergunta1">tr</p>
+    <p><input type="radio" name="pergunta1">rb</p>
+    <p><input type="radio" name="pergunta1">rgb</p>
+    <p><input type="radio" id="p1Correta" name="pergunta1">br</p>
+    <p><input type="radio" name="pergunta1">scr</p>
+
+    <h2>
+        2. Qual comando HTML indica um Título?
+    </h2>
+    <p><input type="radio" id="p2Correta" name="pergunta2">h1</p>
+    <p><input type="radio" name="pergunta2">p</p>
+    <p><input type="radio" name="pergunta2">div</p>
+    <p><input type="radio" name="pergunta2">body</p>
+    <p><input type="radio" name="pergunta2">br</p>
+
+    <h2>
+        3. Qual comando HTML indica um Parágrafo?
+    </h2>
+    <p><input type="radio" id="p3Correta" name="pergunta3">p</p>
+    <p><input type="radio" name="pergunta3">br</p>
+    <p><input type="radio" name="pergunta3">rb</p>
+    <p><input type="radio" name="pergunta3">div</p>
+    <p><input type="radio" name="pergunta3">tr</p>
+
+    <h2>
+
+        <h2>
+            4. Qual comando HTML indica uma lista?
+        </h2>
+        <p><input type="radio" name="pergunta4">header</p>
+        <p><input type="radio" id="p4Correta" name="pergunta4">ol</p>
+        <p><input type="radio" name="pergunta4">rgb</p>
+        <p><input type="radio" name="pergunta4">br</p>
+        <p><input type="radio" name="pergunta4">body</p>
+
+        <h2>
+            5. Qual comando HTML quebra uma entrada de dados?
+        </h2>
+        <p><input type="radio" name="pergunta5">tr</p>
+        <p><input type="radio" name="pergunta5">rb</p>
+        <p><input type="radio" name="pergunta5">rgb</p>
+        <p><input type="radio" id="p5Correta" name="pergunta5">input</p>
+        <p><input type="radio" name="pergunta5">br</p>
+
+        <input type="button" value="Concluir" onclick="calcularNota()">
+        <p>Nota Final: <span id="nota">?</span></p>
+
+</body>
+
+</html>
