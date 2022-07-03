@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+    <script>
+
+        var password = '1234';
+        var username = 'cleomar@gmail.com'
+
+        function onClick() {
+
+            var passwordInput = document.getElementById("password").value;
+            var usernameInput = document.getElementById("email").value;
+
+            if (passwordInput === password && usernameInput === username) {
+
+                alert("Você esta logado")
+
+            } else {
+
+                alert("Usuário ou Senha inválida")
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="card-login">
+
+        <h1>Login</h1>
+
+        <form class="form-login">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+            <button type="button" onclick="onClick()">Login</button>
+            <a href="index.html">Voltar</a>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

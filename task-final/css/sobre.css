@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    font-size: 1.5vh;
+    border: none;
+}
+
+body {
+    background-image: url(../img/fundo-sobre.jpeg);
+    background-size: cover;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.card-sobre {
+    box-shadow: #323232 10px 10px 10px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30vh;
+    background-color: #fff;
+    opacity: 70%;
+}
+
+.profile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+img {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.content-profile {
+    margin-top: 45px;
+}
+
+.content-profile p, h4 {
+    margin-bottom: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #323232;
+}
+
+@media screen and (max-width: 800px) {
+
+    .profile {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    img {
+        width: 30%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+}

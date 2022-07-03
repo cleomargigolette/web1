@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    border: none;
+}
+
+body {
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+}
+
+.card-login {
+    box-shadow: #323232 10px 10px 10px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30vh;
+    background-color: #fff;
+}
+
+.form-login {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label, input, button, a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+a, button {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #323232;
+    padding: 10px;
+}
+
+a:hover {
+    color: #fff;
+    background-color: #323232;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #323232;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    text-align: left;
+    border-bottom: 2px solid #323232;
+    margin-bottom: 20px;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .card-login {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .card-login {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .card-login {
+        width: 80%;
+    }
+
+}

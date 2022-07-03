@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-meu {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    margin: 0px;
+}
+
+.header {
+    width: 100%;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.a-login {
+    text-align: center;
+    width: 10%;
+    min-width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.a-login:hover {
+    background-color: rgb(160, 157, 157);
+    color: #fff;
+}
+
+section {
+    margin: 30px 0px 50px 0px;
+}
+
+.history {
+    text-align: center;
+}
+
+.history p {
+    text-align: left;
+}
+
+.cast {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.cast h1 {
+    margin-bottom: 40px;
+}
+
+.content-cast {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.card-cast {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 40%;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.card-cast div {
+    margin: auto;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.contact {
+    box-shadow: #323232 10px 10px 10px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+.form-contact {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label, input, textarea, .button-contact {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    text-align: left;
+    border-bottom: 2px solid #323232;
+    margin-bottom: 20px;
+}
+
+.button-contact {
+    margin: auto;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+.button-contact:hover {
+    color: #fff;
+    background-color: #323232;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .content-cast {
+        flex-direction: column;
+    }
+
+    .card-cast {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .card-cast {
+        flex-direction: column;
+    }
+
+    .card-cast img {
+        width: 50%;
+        border-radius: 0px 0px 10px 10px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+}
